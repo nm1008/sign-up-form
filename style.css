@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,700;1,600&family=Hanken+Grotesk:wght@500;700;800&family=Outfit:wght@400;700&family=Roboto:wght@500&display=swap');
 @font-face{
     font-family: "Norse Bold";
     src: url("font/Norse-Bold.otf") format("opentype")
@@ -10,43 +11,119 @@
 }
 
 body{
-    font-family: "Norse Bold";
-    /* background-color: black; */
     overflow: hidden;
 }
 
-
-
 .container{
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    position: relative
+
+}
+
+.background{
+    width: 35vw;
+    height: 100vh;
+    z-index: 1;
+    
 }
 
 .logo{
     position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    /* opacity: .7; */
-    padding: 30px 175px;
-    margin-top: 150px
-    
+   top: 0;
+   left: 0;
+   z-index: 2;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 150px;
+   background-color: rgba(0, 0, 0, 0.5);
+   width: 35vw
+   
 }
-
-.background{
-    height: 100vh;
-    z-index: 1;
-}
-
 .odin-logo{
-    width: 100px;
-    z-index: 2
+    width: 125px
 }
 
-.logo h1{
-    color: white;
-    font-size: 7em
+
+.right{
+    line-height: 1.25;
 }
+
+.info{
+    margin: 0px 150px 50px 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 200px;
+    background-image: #596D48 
+
+}
+.message2{
+    margin-bottom: 30px;
+}
+.message4{
+    margin: 0px 0px 30px 30px;
+    font-family: sans-serif;
+}
+
+.row{
+    display: flex;
+    gap: 150px;
+    background-color: white;
+    box-shadow: 0 2px 2px -2px gray;
+    margin-bottom: 50px
+}
+
+label{
+    margin-left: 30px;
+    margin-bottom: 50px;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 1.5px;
+}
+
+input{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 35px;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #E5E7EB;
+}
+
+input[type="text"]{
+    font-size: 14px
+}
+
+.createAccount{
+    margin-left: 30px;
+    font-family: sans-serif;
+}
+
+button{
+    padding:12px 40px;
+    border-radius: 10px;
+    border: none;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: #596D48;
+    color: white;
+    margin-bottom: 30px
+}
+
+.accountInfo{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+a{
+    color: #596D48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
