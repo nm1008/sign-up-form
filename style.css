@@ -3,6 +3,50 @@
     src: url("font/Norse-Bold.otf") format("opentype")
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: "Norse Bold";
+    /* background-color: black; */
+    overflow: hidden;
+}
+
+
+
+.container{
+    position: relative;
+}
+
+.logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* opacity: .7; */
+    padding: 30px 175px;
+    margin-top: 150px
+    
+}
+
+.background{
+    height: 100vh;
+    z-index: 1;
+}
+
+.odin-logo{
+    width: 100px;
+    z-index: 2
+}
+
+.logo h1{
+    color: white;
+    font-size: 7em
 }
