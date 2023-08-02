@@ -39,16 +39,21 @@ body{
    justify-content: center;
    margin-top: 150px;
    background-color: rgba(0, 0, 0, 0.5);
-   width: 35vw
+   width: 35vw;
    
 }
 .odin-logo{
-    width: 125px
+    width: 125px;
 }
 
+.odin-logo, h1{
+    font-family: "Norse Bold", sans-serif;
+    font-size: 7em;
+}
 
 .right{
     line-height: 1.25;
+    background-color: #fafafa;
 }
 
 .info{
@@ -58,25 +63,63 @@ body{
     font-weight: bold;
     margin-top: 200px;
     background-image: #596D48 
-
 }
+
 .message2{
     margin-bottom: 30px;
 }
+
 .message4{
-    margin: 0px 0px 30px 30px;
+    margin-left: 30px;
+    margin-bottom: 20px;
     font-family: sans-serif;
+    
 }
 
-.row{
-    display: flex;
-    gap: 150px;
+
+.second{
     background-color: white;
     box-shadow: 0 2px 2px -2px gray;
-    margin-bottom: 50px
+}
+.form-main-div{
+    display: flex;
+    margin-left: 30px;
+    gap: 100px; 
+     
 }
 
 label{
+    font-family: sans-serif;
+    letter-spacing: 1.1px;
+    font-size: 13px;
+    font-style: bolder;
+}
+
+input{
+    width: 250px;
+    height: 28px;
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    
+    
+}
+
+input:focus{
+    border: 3px solid blue;
+}
+
+#password:invalid{
+    border: 1px solid red;
+}
+
+#confirm-password:invalid{
+    border: 1px solid red;
+}
+
+
+
+/* label{
     margin-left: 30px;
     margin-bottom: 50px;
     font-family: "Roboto", sans-serif;
@@ -95,11 +138,15 @@ input{
 
 input[type="text"]{
     font-size: 14px
-}
-
+} */
+/* 
 .createAccount{
     margin-left: 30px;
     font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 button{
@@ -107,10 +154,12 @@ button{
     border-radius: 10px;
     border: none;
     font-size: 19px;
-    font-weight: bold;
     background-color: #596D48;
-    color: white;
     margin-bottom: 30px
+}
+
+button a {
+    color: white
 }
 
 .accountInfo{
@@ -124,6 +173,6 @@ a{
     font-weight: bold;
 }
 
-
+ */
 
 
